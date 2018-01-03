@@ -6,7 +6,8 @@
 /out-tsc
 
 # dependencies
-/node_modules
+**/node_modules/**
+firebase-data.ts
 
 # IDEs and editors
 /.idea

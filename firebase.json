@@ -1,0 +1,24 @@
+{
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "hosting": {
+    "public": "dist/apps",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+
+    "rewrites": [
+      {
+        "source": "/timestamp",
+        "function": "app"
+      },
+      {
+        "source": "/my-app/**",
+        "destination": "/my-app/index.html"
+      },
+      {
+        "source": "/admin/**",
+        "destination": "/admin/index.html"
+      }
+    ]
+  }
+}
